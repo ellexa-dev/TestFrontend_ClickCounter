@@ -4,12 +4,12 @@ import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 
 import Home from '../../views/Home';
-import { makeSelectClickCounter } from './action';
-import { incrementAction } from './action';
-import { decrementAction } from './action';
+import { makeSelectClickCounter } from './ClickCounter';
+import { incrementAction } from './ClickCounter';
+import { decrementAction } from './ClickCounter';
 import { useInjectReducer } from '../../utils/injectReducer';
 
-import reducer from './action';
+import reducer from './ClickCounter';
 
 const key = 'clickCounter';
 

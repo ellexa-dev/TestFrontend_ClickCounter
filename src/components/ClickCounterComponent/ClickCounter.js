@@ -5,12 +5,14 @@ const scope = 'HomeContainer';
 const INCREMENT = `${scope}/increment`;
 const DECREMENT = `${scope}/decrement`;
 
-const selectClickCounterDomain = state => state.clickCounter || initialState;
-const makeSelectClickCounter = () => createSelector(selectClickCounterDomain, substate => substate.counter);
-
 export const initialState = {
     counter: 0,
 };
+
+
+const selectClickCounterDomain = state => state.clickCounter || initialState;
+const makeSelectClickCounter = () => createSelector(selectClickCounterDomain, substate => substate.counter);
+
 
 export {
     makeSelectClickCounter,
